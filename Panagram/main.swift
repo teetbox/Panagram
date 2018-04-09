@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+let paragram = Panagram()
+
+if CommandLine.argc < 2 {
+    paragram.interactiveMode()
+} else {
+    paragram.staticMode()
+}
 
